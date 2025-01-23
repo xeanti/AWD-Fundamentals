@@ -36,13 +36,13 @@ header {
 .button {
     font-family: "Imperial Script", serif;
     display: inline-block;
-    background-color: transparent; /* Make background transparent */
-    color: #000000; /* Change text color (optional) */
-    border: 2px solid #000000; /* Add a solid border */
-    padding: 10px 15px; /* Adjust padding */
+    background-color: transparent;
+    color: #000000;
+    border: 2px solid #000000;
+    padding: 10px 15px;
     margin: 0 5px;
     cursor: pointer;
-    border-radius: 5px; /* Keep rounded corners */
+    border-radius: 5px;
     font-weight: bold;
     text-decoration: none;
     transition: background-color 0.3s, transform 0.2s;

@@ -10,8 +10,8 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
-    background-color: #000000;  /* Optional: Set a background color */
-    color: #333;  /* Optional: Set a default text color */
+    background-color: #000000;
+    color: #333;
 }
 header {
     display: flex;
