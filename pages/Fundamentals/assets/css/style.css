@@ -10,7 +10,7 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
-    background-color: #000000;
+    background-color: #ffffff;
     color: #333;
 }
 header {
@@ -20,20 +20,19 @@ header {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px 30px;
 }
-.logo {
-    height: 50px;
-}
+
 .company-logo {
-    display: flex;
     height: 30px;
-    justify-content: end;
-    align-items: end;
-    margin: auto;
-    padding-left: 1rem;
     transition: transform 0.3s ease;
 }
+
 .company-logo:hover {
     transform: scale(1.1);
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
 }
 .button {
     font-family: "Imperial Script", serif;
@@ -49,19 +48,44 @@ header {
     text-decoration: none;
     transition: background-color 0.3s, transform 0.2s;
 }
+
 .button:hover {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     transform: scale(1.05);
 }
+
 @media (max-width: 600px) {
     header {
         flex-direction: column;
         align-items: flex-start;
     }
+    .button-container {
+        width: 100%;
+        justify-content: flex-start;
+    }
     .button {
         width: 100%;
         margin: 5px 0;
     }
+}
+.button_home{
+    font-family: "Imperial Script", serif;
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    border: 2px solid #000000;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.button_home:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
 }
 
 .background-video {
@@ -81,8 +105,8 @@ header {
     font-size: 4.5rem;
     font-weight: 750;
     position: relative;
-    color: #fff;
-    text-shadow: 3px 4px 5px rgba(0,0,0,0.6);
+    color: #000000;
+    text-shadow: 3px 4px 5px rgba(255, 255, 255, 0.87);
     align-items: center;
     justify-content: center;
     display: flex;
@@ -151,6 +175,7 @@ header {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+    padding: 20px;
 }
 
 .funda_4{
@@ -179,7 +204,8 @@ header {
 }
 footer {
     font-family: "Imperial Script", serif;
-    font-weight: 750;
+    font-size: 1.1rem;
+    font-weight: 800;
     background-color: rgba(255, 255, 255, 0.8);
     color: rgb(0, 0, 0);
     text-align: center;
